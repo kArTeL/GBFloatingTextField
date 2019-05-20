@@ -25,14 +25,14 @@ GBFloatingTextField is a Floting TextField. Which also contains Left Image and R
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Gurinder Batth' => 'mr.gsbatth@gmail.com' }
-  s.source           = { :git => 'https://github.com/GurinderBatth/GBFloatingTextField.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/kArTeL/GBFloatingTextField.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'GBFloatingTextField/Classes/**/*'
   
-  s.swift_version = '3.2'
+  s.swift_version = '4.2'
   
   # s.resource_bundles = {
   #   'GBFloatingTextField' => ['GBFloatingTextField/Assets/*.png']
