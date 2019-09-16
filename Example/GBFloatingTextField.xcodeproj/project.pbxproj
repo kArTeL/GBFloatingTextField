@@ -267,7 +267,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GBFloatingTextField_Example/Pods-GBFloatingTextField_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-GBFloatingTextField_Example/Pods-GBFloatingTextField_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GBFloatingTextField/GBFloatingTextField.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -276,7 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GBFloatingTextField_Example/Pods-GBFloatingTextField_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GBFloatingTextField_Example/Pods-GBFloatingTextField_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		214BE54F2A41AD89E3731C2C /* [CP] Check Pods Manifest.lock */ = {
