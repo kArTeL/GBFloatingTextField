@@ -146,7 +146,7 @@ public class GBTextField: UITextField {
             }
         }
     }
-    
+    @IBInspectable
     public var imageSize: CGFloat = 0
     
     @IBInspectable
