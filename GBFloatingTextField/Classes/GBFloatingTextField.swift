@@ -146,15 +146,13 @@ public class GBTextField: UITextField {
             }
         }
     }
-    @IBInspectable
-    public var imageSize: CGFloat = 0
     
     @IBInspectable
     public var leftImage: UIImage?{
         didSet{
-//            let ratio = (leftImage?.size.height)! / (leftImage?.size.width)!
-//            let newWidth = self.frame.height / ratio
-            viewLeft = UIView(frame: CGRect(x: 0, y: 0, width: imageSize, height: imageSize))
+            let ratio = (leftImage?.size.height)! / (leftImage?.size.width)!
+            let newWidth = self.frame.height / ratio
+            viewLeft = UIView(frame: CGRect(x: 0, y: 0, width: newWidth, height: self.frame.size.height))
             if leftImageClicable{
                 if viewLeft != nil{
                     viewLeft?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(leftViewSelected(_:))))
@@ -170,7 +168,7 @@ public class GBTextField: UITextField {
             imageView.bottomAnchor.constraint(equalTo: viewLeft!.bottomAnchor, constant: -7).isActive = true
             imageView.rightAnchor.constraint(equalTo: viewLeft!.rightAnchor, constant: -7).isActive = true
             imageView.clipsToBounds = true
-            imageView.contentMode = .scaleAspectFit
+            imageView.contentMode = .scaleToFill
             self.leftView = viewLeft
             self.leftViewMode = .always
         }
