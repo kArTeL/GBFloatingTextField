@@ -152,7 +152,7 @@ public class GBTextField: UITextField {
         didSet{
             let ratio = (leftImage?.size.height)! / (leftImage?.size.width)!
             let newWidth = self.frame.height / ratio
-            viewLeft = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+            viewLeft = UIView(frame: CGRect(x: 0, y: 0, width: 2, height: 2))
             if leftImageClicable{
                 if viewLeft != nil{
                     viewLeft?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(leftViewSelected(_:))))
