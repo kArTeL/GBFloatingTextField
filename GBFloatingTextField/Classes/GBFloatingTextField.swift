@@ -168,7 +168,7 @@ public class GBTextField: UITextField {
             imageView.bottomAnchor.constraint(equalTo: viewLeft!.bottomAnchor, constant: -7).isActive = true
             imageView.rightAnchor.constraint(equalTo: viewLeft!.rightAnchor, constant: -7).isActive = true
             imageView.clipsToBounds = true
-            imageView.contentMode = .scaleToFill
+            imageView.contentMode = .scaleAspectFill
             self.leftView = viewLeft
             self.leftViewMode = .always
         }
